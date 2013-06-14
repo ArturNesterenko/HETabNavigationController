@@ -15,6 +15,8 @@
     while (currentController && ![currentController isKindOfClass:[HETabNavigationController class]]) {
         if ([currentController.parentViewController isEqual:currentController]) {
             currentController = nil;
+        } else {
+            currentController = currentController.parentViewController;
         }
     }
     return (HETabNavigationController *)currentController;
