@@ -96,6 +96,18 @@
 
 #pragma mark - Public Methods
 
+- (NSArray *)topViewControllers
+{
+    NSMutableArray *tabViewControllers = nil;
+    if (self.tabNavigationArrays.count > 0) {
+        tabViewControllers = [NSMutableArray array];
+        for (NSArray *tabNavigationArray in self.tabNavigationArrays) {
+            [tabViewControllers addObject:[tabNavigationArray lastObject]];
+        }
+    }
+    return tabViewControllers;
+}
+
 - (void)setTitle:(NSString *)title forTabAtIndex:(NSUInteger)index
 {
     if (index < self.segmentedControl.numberOfSegments) {

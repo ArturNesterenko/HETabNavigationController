@@ -10,6 +10,7 @@
 
 @interface HETabNavigationController : UINavigationController
 
+@property (nonatomic, readonly) NSArray *topViewControllers;
 @property (nonatomic, readonly, assign) NSUInteger currentTabIndex;
 
 - (id)initWithTabViewControllers:(NSArray *)tabViewControllers;
