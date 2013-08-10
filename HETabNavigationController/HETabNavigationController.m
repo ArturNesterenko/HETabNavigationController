@@ -128,6 +128,15 @@
     }
 }
 
+- (void)removeTabAtIndex:(NSUInteger)index animated:(BOOL)animated
+{
+    if (index < self.tabNavigationArrays.count) {
+        [self.tabNavigationArrays removeObjectAtIndex:index];
+        [self.segmentedControl removeSegmentAtIndex:index animated:animated];
+        [self.segmentedControl sizeToFit];
+    }
+}
+
 - (void)selectTabAtIndex:(NSUInteger)index
 {
     [self showTabAtIndex:index];

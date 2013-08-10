@@ -19,6 +19,7 @@
 - (void)setImage:(UIImage *)image forTabAtIndex:(NSUInteger)index;
 - (void)addTabViewController:(UIViewController *)viewController withTabTitle:(NSString *)tabTitle;
 - (void)insertTabViewController:(UIViewController *)viewController withTitle:(NSString *)tabTitle atTabIndex:(NSUInteger)tabIndex;
+- (void)removeTabAtIndex:(NSUInteger)index animated:(BOOL)animated;
 
 - (void)selectTabAtIndex:(NSUInteger)index;
 
