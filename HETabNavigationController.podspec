@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '5.0'
 
-  s.source       = { :git => "https://github.com/itomych/HETabNavigationController.git", :commit => "e69e9bd093eac108bccdac10eacc2953f68f7dee" }
+  s.source       = { :git => "https://github.com/itomych/HETabNavigationController.git", :commit => "cadfedee5f8c9fc68ff03084c158e4b38eca72f9" }
   s.source_files = "HETabNavigationController/*.{h,m}"
 
   s.requires_arc = true
