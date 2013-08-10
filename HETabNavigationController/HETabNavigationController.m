@@ -57,11 +57,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated 
-{
-    [super viewWillAppear:animated];
     for (NSArray *tabNavigationArray in self.tabNavigationArrays) {
         UIViewController *viewController = [tabNavigationArray objectAtIndex:0];
         [viewController.navigationItem setTitleView:self.segmentedControl];
@@ -71,11 +66,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
     return [self.topViewController shouldAutorotateToInterfaceOrientation:toInterfaceOrientation];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 - (void)showTabAtIndex:(NSUInteger)index

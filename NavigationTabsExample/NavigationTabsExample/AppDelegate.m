@@ -20,7 +20,7 @@
     ViewController *firstViewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     
-    HETabNavigationController *tabNavigationController = [[HETabNavigationController alloc] initWithTabViewControllers:@[firstViewController, secondViewController] tabTitles:@[@"First", @"Second"]];
+    HETabNavigationController *tabNavigationController = [[HETabNavigationController alloc] initWithTabViewControllers:@[firstViewController, secondViewController] tabTitles:@[@"First"]];
     
     [self.window setRootViewController:tabNavigationController];
     [self.window makeKeyAndVisible];
